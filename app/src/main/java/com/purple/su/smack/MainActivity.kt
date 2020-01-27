@@ -1,5 +1,6 @@
 package com.purple.su.smack
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -31,7 +32,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun loginBtnNavHeaderClicked(view: View) {
-
+        val loginIntent = Intent(this, LoginActivity::class.java)
+        startActivity(loginIntent)
     }
 
     fun addChannelClicked(view: View) {
@@ -39,6 +41,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun sendMsgClicked(view: View) {
-        
+
     }
 }
